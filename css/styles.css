@@ -109,7 +109,7 @@ body {
     line-height: 1.17;
     text-decoration: none;
     /* outline: 3px solid blue;*/
-} 
+}
 
 .logo-studio {
     /* у хедері задає колір по макету для текстових елементів */
@@ -146,8 +146,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     gap: 76px;
-    /* outline: 5px solid orange;
-    background-color: rgb(50, 226, 59); */
 }
 
 .site-nav {
@@ -306,7 +304,7 @@ body {
     text-align: center;
     margin-bottom: 72px;
     padding-top: 0px;
-   
+
 }
 
 /* H3 of section 3 in the main */
@@ -350,7 +348,7 @@ body {
     color: var(--footer-text);
     width: 264px;
     font-size: 16px;
-    
+
 }
 
 .logo-foot {
