@@ -12,9 +12,9 @@
     --hero-hover-button: #404BBF;
     --rows-text-color: #434455;
     --logo-text-footer: #F4F4FD;
+    --icon-bcg-color: #F4F4FD;
     --footer-text: #E7E9FC;
     --footer-bcg-color: #2E2F42;
-
     --background-team: #F4F4FD;
 
     /* portfolio buttons */
@@ -27,6 +27,16 @@
 
     /* borders */
     --border-col-portfolio: #E7E9FC;
+    --border-col-customers: #8E8F99;
+    --border-hov-customers: #404BBF;
+
+    /* links */
+    --link-text-prymary: #8E8F99;
+    --link-text-focus: #404BBF;
+    --link-circle-color: #4D5AE5;
+    --link-circle-another: #404BBF;
+    --link-footer-color: #434455;
+    --link-footer-another: #31D0AA;
     /*ширина между img в секции 2 главной страницы*/
     --indent: 24px;
 }
@@ -190,7 +200,13 @@ body {
     background-color: var(--hero-title-bcg);
     text-align: center;
     padding: 188px 0px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+    background-size: cover;
     /* outline: 5px solid green; */
+    background-position: center;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
@@ -244,6 +260,19 @@ body {
     justify-content: space-between;
 }
 
+/* класс для иконок в секции 2 */
+.feature-icon {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* outline: 2px solid red; */
+    background-color: var(--icon-bcg-color);
+}
+
 /*H2 на главной странице*/
 .letter {
     text-transform: capitalize;
@@ -285,6 +314,9 @@ body {
 .card-item-team {
     flex-basis: calc((100% - (24px * 3)) / 4);
     background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
     /* outline: 3px solid rgb(132, 34, 224); */
 
 }
@@ -322,7 +354,7 @@ body {
     font-size: 16px;
     line-height: 1.15;
     text-align: center;
-    /* margin-bottom: 32px; */
+    margin-bottom: 8px;
 }
 
 .p {
@@ -330,10 +362,96 @@ body {
 }
 
 .card-content {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
+    padding: 32px 16px;
     background-color: var(--body-bcg-color);
 }
+
+/* иконки социальных сетей */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+/* ссылка на иконку соц.сетей */
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--link-circle-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--link-circle-another);
+
+}
+
+/**
+  |============================
+  | Section 4  - Customers
+  |============================
+*/
+.section-pad {
+    padding-top: 130px;
+}
+
+.customers {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    border: 1 px solid var(--border-col-customers);
+}
+
+.border {
+    border: 1px solid var(--border-col-customers);
+    border-radius: 5px;
+}
+
+.border:hover,
+.border:active {
+    border: 1px solid var(--border-hov-customers);
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+
+    color: var(--link-text-prymary);
+}
+
+.customers-icon {
+    fill: currentColor;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--link-text-focus);
+}
+
+
+.customers-link:hover,
+.customers-link:focus  {
+    color: var(--link-text-focus);
+}
+
+/* .customers-icon {
+    fill: var(--link-text-prymary);
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+    fill: var(--link-text-focus);
+} */
+
 
 /*===================*/
 /*         FOOTER    */
@@ -341,6 +459,7 @@ body {
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+    /* padding-left: 156px; */
     background-color: var(--footer-bcg-color);
 }
 
@@ -359,6 +478,35 @@ body {
 
 .white {
     color: var(--logo-text-footer);
+}
+
+.footer-wraper {
+    display: flex;
+    /* align-items: center; */
+   gap: 120px;
+}
+
+.socials-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+/* ссылка на иконку соц.сетей в footer */
+.socials-footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--link-footer-color);
+}
+
+.socials-footer-link:hover, 
+.socials-footer-link:focus {
+    background-color: var(--link-footer-another);
 }
 
 /*===================*/
@@ -390,7 +538,7 @@ body {
     border: none;
     cursor: pointer;
     height: 48px;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 12px 24px;
 
     font-family: Roboto, sans-serif;
@@ -408,6 +556,7 @@ body {
     /* border-color: transparent; */
     border-color: var(--border-btn-color);
     border: 1px solid var(--primary-btn-color);
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Паддинги сетки в Портфолио */
@@ -454,4 +603,9 @@ body {
 
 .section-title-p {
     margin: 0px;
+}
+
+.card-item-a:hover {
+    display: block;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
