@@ -316,9 +316,9 @@ body {
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-    /* outline: 3px solid rgb(132, 34, 224); */
-
+    box-shadow: 0 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 /* section 3 */
@@ -405,7 +405,6 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    border: 1 px solid var(--border-col-customers);
 }
 
 .border {
@@ -424,11 +423,11 @@ body {
     justify-content: center;
     width: 168px;
     height: 88px;
-
     color: var(--link-text-prymary);
 }
 
 .customers-icon {
+    padding: 16px 32px;
     fill: currentColor;
 }
 
@@ -439,7 +438,7 @@ body {
 
 
 .customers-link:hover,
-.customers-link:focus  {
+.customers-link:focus {
     color: var(--link-text-focus);
 }
 
@@ -483,7 +482,7 @@ body {
 .footer-wraper {
     display: flex;
     /* align-items: center; */
-   gap: 120px;
+    gap: 120px;
 }
 
 .socials-footer {
@@ -504,9 +503,13 @@ body {
     background-color: var(--link-footer-color);
 }
 
-.socials-footer-link:hover, 
+.socials-footer-link:hover,
 .socials-footer-link:focus {
     background-color: var(--link-footer-another);
+}
+
+.foot-text-bold {
+    font-weight: 500;
 }
 
 /*===================*/
@@ -555,7 +558,6 @@ body {
     background: var(--primary-btn-color);
     /* border-color: transparent; */
     border-color: var(--border-btn-color);
-    border: 1px solid var(--primary-btn-color);
     box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -602,10 +604,14 @@ body {
 }
 
 .section-title-p {
+    font-weight: 400;
     margin: 0px;
+    color: var(--link-text-cont);
+
 }
 
 .card-item-a:hover {
     display: block;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
